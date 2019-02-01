@@ -1,4 +1,4 @@
-name: botframework-emulator
+name: lxqt-desktop
 summary: BotFramework-Emulator is a desktop application that allows bot developers to test and debug bots built using the BotBuilder SDK.
 description: 
   
@@ -13,15 +13,15 @@ architectures:
   - build-on: arm64
 
 apps:
-  botframework-emulator:
-    command: botframework-emulator
+  lxqt-desktop:
+    command: lxqt-desktop
     plugs:
-      - network
+      
 
 parts:
-  botframework-emulator:
+  lxqt-desktop:
     plugin: 
-    source: https://github.com/Microsoft/BotFramework-Emulator.git
+    source: https://github.com/lxqt/lxqt.git
     source-type: git
     override-pull: |
       snapcraftctl pull
