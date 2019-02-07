@@ -14,13 +14,32 @@ architectures:
 
 apps:
   lxqt-desktop:
-    command: lxqt-desktop
-    plugs:
-      
+    command: bash
+        slots: [mir, upower-observe]
+        plugs:
+        - home
+        - x11
+        - opengl
+        - network
+        - network-bind
+        - unity7
+        - pulseaudio
+        - network-manager
+        - lxqt
+        - udisks2
 
 parts:
   lxqt-desktop:
-    plugin: 
+  lxqt:
+        stage-packages: [lxqt-workspace-wayland, lxqt-desktop, gdb, strace, vim, kwin-wayland-backend-x11, libxkbcommon-x11-0, libxkbcommon0, libx11-data, xkb-data, ltrace, kwrite, lxqt-workspace, konsole, kwin-wayland-backend-drm, libqt5sql5-sqlite]
+        plugin: dump
+        source: empty
+        organize:
+            usr/bin/Xwayland: usr/bin/Xwayland.orig
+    patchy:
+        after: [lxqt]
+        plugin: dump
+        source: xwayland
     source: https://github.com/lxqt/lxqt.git
     source-type: git
     override-pull: |
