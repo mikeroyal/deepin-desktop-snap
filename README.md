@@ -13,7 +13,7 @@
 -->
 
 
-![my-snap-name](https://user-images.githubusercontent.com/45159366/52110773-865c9200-25b6-11e9-8bd1-8710d9c8617c.png?raw=true "my-snap-name")
+![my-snap-name](https://user-images.githubusercontent.com/45159366/52701957-28be3300-2f30-11e9-8d46-c83315b489e6.png?raw=true "my-snap-name")
 
 
 <p align="center">Published for <img src="https://raw.githubusercontent.com/anythingcodes/slack-emoji-for-techies/gh-pages/emoji/tux.png" align="top" width="24" /> with 💝 by Snapcrafters</p>
