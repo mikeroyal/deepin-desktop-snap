@@ -1,6 +1,6 @@
 name: lxqt-desktop
-summary: LXQt Desktop, the Lightweight Qt Desktop Environment.
-description: 
+summary: LXQt Desktop.
+description: the Lightweight Qt Desktop Environment.
   
 adopt-info: devmode # use 'strict' once you have the right plugs and slots
 
@@ -9,8 +9,6 @@ confinement: devmode
 
 architectures:
   - build-on: amd64
-  - build-on: armhf
-  - build-on: arm64
 
 apps:
   lxqt-desktop:
@@ -46,7 +44,7 @@ parts:
       snapcraftctl pull
       last_committed_tag="$(git describe --tags --abbrev=0)"
       last_committed_tag_ver="$(echo ${last_committed_tag} | sed 's/v//')"
-      last_released_tag="$(snap info wethr | awk '$1 == "beta:" { print $2 }')"
+      last_released_tag="$(snap info $SNAPCRAFT_PROJECT_NAME| awk '$1 == "beta:" { print $2 }')"
       # If the latest tag from the upstream project has not been released to
       # beta, build that tag instead of master.
       if [ "${last_committed_tag_ver}" != "${last_released_tag}" ]; then
