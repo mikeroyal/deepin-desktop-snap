@@ -4,7 +4,7 @@
   LXQt Desktop
 </h1>
 
-<p align="center"><b>This is the snap for LXQt Desktop,the Lightweight Qt Desktop Environment. It works on Ubuntu, Fedora, Debian, and other major Linux distributions. </p>
+This is the snap for [LXQt Desktop](https://lxqt.org/),the Lightweight Qt Desktop Environment. It works on Ubuntu, Fedora, Debian, and other major Linux distributions. 
 
 <!-- Uncomment and modify this when you are provided a build status badge
 <p align="center">
