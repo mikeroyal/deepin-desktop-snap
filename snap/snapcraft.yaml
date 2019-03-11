@@ -26,6 +26,64 @@ apps:
         - network-manager
         - lxqt
         - udisks2
+      
+slots:
+    -dbus:
+        interface: dbus
+        bus: session
+        name: 
+    -dbus:
+        interface: dbus
+        bus: session
+        name: 
+    -dbus:
+        interface: dbus
+        bus: session
+        name: 
+    -dbus:
+        interface: dbus
+        bus: session
+        name: 
+    -dbus:
+        interface: dbus
+        bus: session
+        name: 
+    -dbus:
+        interface: dbus
+        bus: session
+        name: 
+    -dbus:
+        interface: dbus
+        bus: session
+        name: 
+    -dbus:
+        interface: dbus
+        bus: session
+        name: 
+    -dbus:
+        interface: dbus
+        bus: session
+        name: 
+    -dbus:
+        interface: dbus
+        bus: session
+        name: 
+    -dbus:
+        interface: dbus
+        bus: session
+        name: 
+    -dbus:
+        interface: dbus
+        bus: session
+        name: 
+   -dbus:
+        interface: dbus
+        bus: session
+        name: 
+    -dbus:
+        interface: dbus
+        bus: session
+        name: 
 
 parts:
   lxqt-desktop:
