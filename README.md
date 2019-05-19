@@ -4,7 +4,7 @@
   Deepin Desktop
 </h1>
 
-This is the snap for [Deepin Desktop](https://www.deepin.org/en/dde/), an elegant, easy to use and reliable domestic desktop operating system. It works on Ubuntu, Fedora, Debian, and other major Linux distributions. 
+This is the snap for [Deepin Desktop](https://www.deepin.org/en/dde/), an elegant, easy to use and reliable domestic desktop environment. It works on Ubuntu, Fedora, Debian, and other major Linux distributions. 
 
 <!-- Uncomment and modify this when you are provided a build status badge
 <p align="center">
