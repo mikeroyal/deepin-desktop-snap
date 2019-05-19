@@ -1,9 +1,9 @@
-name: lxqt-desktop
-version: 0.14
-summary: LXQt Desktop.
-description: the Lightweight Qt Desktop Environment.
+name: deepin-desktop
+version: 10.15
+summary: Deepin Desktop.
+description: Deepin is an elegant, easy to use and reliable domestic desktop operating system.
   
-adopt-info: devmode # use 'strict' once you have the right plugs and slots
+adopt-info:deepin-desktop
 
 grade: stable
 confinement: devmode
@@ -12,7 +12,7 @@ architectures:
   - build-on: amd64
 
 apps:
-  lxqt-desktop:
+  deepin-desktop:
     command: bash
         slots: [mir, upower-observe]
         plugs:
@@ -24,7 +24,7 @@ apps:
         - unity7
         - pulseaudio
         - network-manager
-        - lxqt
+        - dde-file-manager
         - udisks2
       
 slots:
@@ -86,18 +86,18 @@ slots:
         name: 
 
 parts:
-  lxqt-desktop:
-  lxqt:
-        stage-packages: [lxqt-workspace-wayland, lxqt-desktop, gdb, strace, vim, kwin-wayland-backend-x11, libxkbcommon-x11-0, libxkbcommon0, libx11-data, xkb-data, ltrace, kwrite, lxqt-workspace, konsole, kwin-wayland-backend-drm, libqt5sql5-sqlite]
+  deepin-desktop:
+  deepin:
+        stage-packages: [deepin-workspace-wayland, deepin-desktop, gdb, strace, vim, kwin-wayland-backend-x11, libxkbcommon-x11-0, libxkbcommon0, libx11-data, xkb-data, ltrace, kwrite, lxqt-workspace, konsole, kwin-wayland-backend-drm, libqt5sql5-sqlite]
         plugin: dump
         source: empty
         organize:
             usr/bin/Xwayland: usr/bin/Xwayland.orig
     patchy:
-        after: [lxqt]
+        after: [deepin]
         plugin: dump
         source: xwayland
-    source: https://github.com/lxqt/lxqt.git
+    source: https://github.com/linuxdeepin/dde-file-manager.git
     source-type: git
     override-pull: |
       snapcraftctl pull
