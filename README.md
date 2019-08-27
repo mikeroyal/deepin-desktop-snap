@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://user-images.githubusercontent.com/45159366/57979062-1fc87c00-79cd-11e9-8451-5f0f070530dc.png">
+  <img src="https://user-images.githubusercontent.com/45159366/63739716-1d36b780-c843-11e9-94f1-2085af4005a3.png">
   <br />
   Deepin Desktop
 </h1>
